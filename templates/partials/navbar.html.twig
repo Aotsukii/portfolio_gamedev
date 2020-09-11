@@ -2,7 +2,7 @@
 
 <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
 <label for="page-nav-toggle">
-  <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+  <svg class="icon--menu-toggle hvr-bounce-in" viewBox="0 0 60 30">
     <g class="icon-group">
       <g class="icon--menu">
         <path d="M 6 0 L 54 0" />
@@ -19,11 +19,11 @@
 
 <nav class="main-navigation">
   <ul>
-    <li><a href="{{ path('index') }}">Home</a></li>
-    <li><a href="{{ path('career') }}">Career</a></li>
-    <li><a href="{{ path('productions') }}">Productions</a></li>
-    <li><a href="{{ path('references') }}">References</a></li>
-    <li><a href="{{ path('hobbies') }}">Hobbies</a></li>
-    <li><a href="{{ path('contact') }}">Contact</a></li>
+    <li><a href="{{ path('index') }}">Home <i class="fas fa-home"></i></a></li>
+    <li><a href="{{ path('career') }}">Career <i class="fas fa-business-time"></i></a></li>
+    <li><a href="{{ path('productions') }}">Productions <i class="fas fa-laptop-code"></i></a></li>
+    <li><a href="{{ path('references') }}">References <i class="far fa-address-book"></i></a></li>
+    <li><a href="{{ path('hobbies') }}">Hobbies <i class="fas fa-tools"></i></a></li>
+    <li><a href="{{ path('contact') }}">Contact <i class="fa fa-map-signs"></i></a></li>
   </ul>
 </nav>

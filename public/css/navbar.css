@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:900&display=swap");
 :root {
   --color-primary: #ffcb00;
-  --menu-background-color: rgba(29, 22, 31, 0.9);
+  --menu-background-color: rgba(30, 37, 48, 0.97);
   --color-secondary: #F0F7EE;
   --color-secondary-line: #ffcb00;
   --duration: 1s;
@@ -95,9 +95,17 @@ h1 {
   z-index: -1;
 }
 .main-navigation ul {
-  font-size: 12vmin;
+  font-size: 9vmin;
   font-family: var(--font-heading);
   width: 100%;
+  text-transform: uppercase;
+}
+
+.main-navigation ul i {
+  font-size: 4vmin;
+  position:absolute;
+  top: 35%;
+  left: -10%;
 }
 .main-navigation li {
   --border-size: 2px;
@@ -128,6 +136,10 @@ h1 {
   user-select: none;
   padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
   transform: translateY(100%);
+}
+
+.main-navigation a:hover {
+  color:#ffcb00;
 }
 
 .main-content {

@@ -6,6 +6,8 @@
 
     </head>
     <body>
+        <script>document.body.className += ' fade-out';</script>
+
         <header>
         {% include "partials/navbar.html.twig" %}
         </header>
@@ -14,14 +16,13 @@
                 <div class="pt-tablecell page-home relative" style="background-image: url(https://images2.alphacoders.com/866/866443.jpg);
                 background-position: center;
                 background-size: cover;
-                background-attachment: fixed;"
-                >
+                background-attachment: fixed;">
                     <div class="overlay"></div>   
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                                     <div class="page-title  home text-center">
-                                        <span class="heading-page" style="color:white; z-index:1000;">Career & studies timeline</span>
+                                        <span class="heading-page">Career & studies<span class="blink_me">|</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +89,7 @@
                                         <h2>Bachelor's degree</h2>
                                         <div class="timeline-content-info">
                                         <span class="timeline-content-info-title">
-                                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                                        <i class="fas fa-award" aria-hidden="true"></i></i>
                                         3rd year student
                                         </span>
                                         <span class="timeline-content-info-date">
@@ -111,7 +112,7 @@
                                             <li>IOT</li>
                                             <li>Database management (SQL, PLSQL, NOSQL)</li>
                                             <li>DevOps</li>
-                                            <li ><i class="fa fa-certificate"></i> Bachelor "Conception and Developement of Applications"</li>
+                                            <li><i class="fas fa-award"></i> Degree in "Conception and Developement of Applications"</li>
 
                                         </ul>
                                     </div> <!-- cd-timeline-content -->
@@ -124,7 +125,7 @@
                                         <h2>BTEC Higher National Diploma</h2>
                                         <div class="timeline-content-info">
                                         <span class="timeline-content-info-title">
-                                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                                        <i class="fas fa-award" aria-hidden="true"></i>
                                         1st/2nd year student
                                         </span>
                                         <span class="timeline-content-info-date">
@@ -140,7 +141,7 @@
                                             <li>PHP7</li>
                                             <li>jQuery</li>
                                             <li>Wordpress</li>
-                                            <li><i class="fa fa-certificate"></i> HND in "IT Services to Organizations"</li>
+                                            <li><i class="fas fa-award"></i> HND in "IT Services to Organizations"</li>
                                         </ul>
                                     </div> <!-- cd-timeline-content -->
                                 </div> <!-- cd-timeline-block -->

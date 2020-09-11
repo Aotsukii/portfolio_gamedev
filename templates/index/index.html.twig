@@ -6,178 +6,181 @@
     </head>
 
     <body>
+        <script>document.body.className += ' fade-out';</script>
+        <header>
+            {% include "partials/navbar.html.twig" %}
+        </header>
         <main class="site-wrapper">
-    <div class="pt-table desktop-768">
-        <div class="pt-tablecell page-home relative" style="background-image: url(https://images2.alphacoders.com/866/866443.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        ">
-                        <div class="overlay"></div>
+            <div class="pt-table desktop-768">
+                <div class="pt-tablecell page-home relative" style="background-image: url(https://images2.alphacoders.com/866/866443.jpg);
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                ">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                                <div class="page-title home text-center">
+                                <span class="heading-page"> Hello ! I'm Elie Gazel<span class="blink_me">|</span></span>
+                                <hr></hr>
+                                    <p class="mt20">I'm a 25 years old french game developper living in Montpellier (France) and looking for a job, physical or remote, starting mid Feb. 2021. Have fun browsing!</p>
+                                </div>
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-                                    <div class="page-title  home text-center">
-                                    <span class="heading-page"> Hello ! I'm Elie Gazel</span>
-                                    <hr></hr>
-                                        <p class="mt20">I'm a 25 years old french game developper living in Montpellier (France) and looking for a job, physical or remote, starting mid Feb. 2021. Have fun browsing!</p>
+                                <div class="hexagon-menu clear">
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="{{ path('career') }}" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fas fa-business-time"></i>
+                                                </span>
+                                                <span class="title">Career</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
                                     </div>
-
-                                    <div class="hexagon-menu clear">
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="{{ path('career') }}" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa fa-universal-access"></i>
-                                                    </span>
-                                                    <span class="title">Career</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="{{ path('productions') }}" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa fa-bullseye"></i>
-                                                    </span>
-                                                    <span class="title">Productions</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="{{ path('references') }}" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa fa-braille"></i>
-                                                    </span>
-                                                    <span class="title">REFERENCES</span>
+                                        <a href="{{ path('productions') }}" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fas fa-laptop-code"></i>
                                                 </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>    
+                                                <span class="title">Productions</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="{{ path('hobbies') }}" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa fa-id-badge"></i>
-                                                    </span>
-                                                    <span class="title">Hobbies</span>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="{{ path('references') }}" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="far fa-address-book"></i>
                                                 </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
+                                                <span class="title">REFERENCES</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>    
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="https://github.com/Aotsukii" target="_blank" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fab fa-github-square"></i>
-                                                    </span>
-                                                    <span class="title">GitHub</span>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="{{ path('hobbies') }}" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fas fa-tools"></i>
                                                 </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
+                                                <span class="title">Hobbies</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="https://www.linkedin.com/in/elie-gazel/" target="_blank" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fab fa-linkedin"></i>
-                                                    </span>
-                                                    <span class="title">LinkedIn</span>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="https://github.com/Aotsukii" target="_blank" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fab fa-github-square"></i>
                                                 </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
+                                                <span class="title">GitHub</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
-                                        <div class="hexagon-item">
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="hex-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a href="{{ path('contact') }}" class="hex-content">
-                                                <span class="hex-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa fa-map-signs"></i>
-                                                    </span>
-                                                    <span class="title">Contact</span>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/elie-gazel/" target="_blank" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fab fa-linkedin"></i>
                                                 </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
+                                                <span class="title">LinkedIn</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="{{ path('contact') }}" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-map-signs"></i>
+                                                </span>
+                                                <span class="title">Contact</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
     <body>
 </html>

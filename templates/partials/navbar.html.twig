@@ -1,20 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-dark primary-color">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Interactive</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Web</a>
-      </li>
-    </ul>
-  </div>
+<link rel="stylesheet" href="/css/navbar.css"/>
+
+<input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+<label for="page-nav-toggle">
+  <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+    <g class="icon-group">
+      <g class="icon--menu">
+        <path d="M 6 0 L 54 0" />
+        <path d="M 6 15 L 54 15" />
+        <path d="M 6 30 L 54 30" />
+      </g>
+      <g class="icon--close">
+        <path d="M 15 0 L 45 30" />
+        <path d="M 15 30 L 45 0" />
+      </g>
+    </g>
+  </svg>
+</label>
+
+<nav class="main-navigation">
+  <ul>
+    <li><a href="{{ path('index') }}">Home</a></li>
+    <li><a href="{{ path('career') }}">Career</a></li>
+    <li><a href="{{ path('productions') }}">Productions</a></li>
+    <li><a href="{{ path('references') }}">References</a></li>
+    <li><a href="{{ path('hobbies') }}">Hobbies</a></li>
+    <li><a href="{{ path('contact') }}">Contact</a></li>
+  </ul>
 </nav>

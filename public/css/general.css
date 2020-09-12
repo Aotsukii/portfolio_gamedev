@@ -20,6 +20,13 @@ body.fade-out {
   transition-delay:250ms;
 }
 
+
+.footer-custom{
+  border-top: 2px solid #ffcb00;
+  position:relative;
+  bottom:-50;
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -91,11 +98,11 @@ hr {
    */
   ::-moz-selection {
     background-color: #ffcb00;
-    color: #fff; }
+    color: #000; }
   
   ::selection {
     background-color: #ffcb00;
-    color: #fff; }
+    color: #000; }
   
   /*
    *  Reset bootstrap's default style
@@ -621,11 +628,21 @@ hr {
   }
   
   
-  
+  @media only screen and (max-width: 1200px)
+  {
+    
+  .hexagon-menu{
+    display:none;
+  }
+  }
   
   
   @media only screen and (max-width: 767px)
   {
+    
+  .hexagon-menu{
+    display:none;
+  }
   .hexagon-item {
       float: none;
       margin: 0 auto 50px;
@@ -635,7 +652,7 @@ hr {
   }
     
     .page-home .hexagon-item:nth-last-child(1), .page-home .hexagon-item:nth-last-child(2), .page-home .hexagon-item:nth-last-child(3) {
-      -webkit-transform: rotate(30deg) translate(0px, 0px);
+      -webkit-transform: rotate(30deg) translate(2px, 0px);
       -moz-transform: rotate(30deg) translate(0px, 0px);
       -ms-transform: rotate(30deg) translate(0px, 0px);
       -o-transform: rotate(30deg) translate(0px, 0px);

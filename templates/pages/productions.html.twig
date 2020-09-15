@@ -3,7 +3,8 @@
         <meta charset="UTF-8">
         <title>Elie Gazel's Developer Portfolio</title>
         {% include "partials/header.html.twig" %}
-
+        <link rel="stylesheet" href="css/productions.css">
+        <link rel="stylesheet" href="css/accordion.css">
     </head>
     <body>
         <script>document.body.className += ' fade-out';</script>   
@@ -21,24 +22,119 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
-                                    <div class="page-title  home text-center">
-                                        <span class="heading-page">Productions<span class="blink_me">|</span></span>
+                                    <div class="page-title home text-center">
+                                        <div class="headingBg">
+                                            <span class="heading-page">Personnal productions<span class="blink_me">|</span></span>
+                                        </div>
                                         <hr></hr>
                                         <section class="cd-container">
-                                            <p class="mt20"><br>Here you'll find some of my latest productions, both game oriented projects and web projects.</p>
-                                            <hr></hr>
-                                            <span class="heading-page">Unity projects</span>
-                                            <!-- WEB PROJECTS -->
-                                            <hr></hr>
-                                            <span class="heading-page">Web projects</span>
+                                            <p class="mt20"><br>Here you'll find some of my latest productions.</p>
+                                            <div class="headingBg">
+                                                <span class="heading-page">Unity projects</span>
+                                            </div>
+                                            <hr class="mt-1"></hr>
+                                            <p>Coming soon ! I am currently working on different Unity projects in order to familiarize with this engine.</p>
+                                            <div class="headingBg">
+                                                <span class="heading-page">Web projects</span>
+                                            </div>
+                                            <hr class="mt-1"></hr>
+                                        
+                                            <div class="col-lg-4">
+                                            <div class="blog-container" style= "border: 1px solid #ffcb00; ">
+                                                <div class="blog-header">
+                                                    <div class="blog-cover" style="background-image:url(img/rdl.jpg);">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-body">
+                                                    <div class="blog-title">
+                                                        <span class="heading-page"><a href="http://refugedulanguedoc.herokuapp.com/" target="_blank">Refuge du Languedoc</a></span>
+                                                    </div>
+                                                    <div class="blog-summary">
+                                                    <p>
+                                                        Almost finished work that I presented for my bachelor's degree: Symfony based application made to manage an animal rescue association with adoptions, fostering, event organization, donations. The application is super secured (more infos in the memoire downloadable below).
+                                                    </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="blog-tags mt-2 ml-2">
+                                                    <ul>
+                                                        <li class=" mb-1">Symfony</li>
+                                                        <li>Doctrine</li>
+                                                        <li>MySQL</li>
+                                                        <li>Twig</li>
+                                                        <li>PHP</li>
+                                                        <li>JS</li>
+                                                        <li>jQuery</li>
+                                                        <p><a href="#"> Download the memoire documenting the whole project (FR only)</a></p>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>  
+                                            <div class="col-lg-4">
+                                            <div class="blog-container" style= "border: 1px solid #ffcb00; ">
+                                                <div class="blog-header">
+                                                    <div class="blog-cover" style="background-image:url(img/gazelnet.jpg);">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-body">
+                                                    <div class="blog-title">
+                                                        <span class="heading-page"><a href="http://gazel.net/" target="_blank">Gazel.net website</a></span>
+                                                    </div>
+                                                    <div class="blog-summary">
+                                                    <p>
+                                                        New version of gazel.net's website, done on wordpress.
+                                                    </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="blog-tags mt-2 ml-2">
+                                                    <ul>
+                                                        <li class=" mb-1">Divi</li>
+                                                        <li>Wordpress</li>
+                                                        <li>PHP</li>
+                                                        <li>JS</li>
+                                                        <li>jQuery</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                            <div class="blog-container" style= "border: 1px solid #ffcb00; ">
+                                                <div class="blog-header">
+                                                    <div class="blog-cover" style="background-image:url(img/egazel.jpg);">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-body">
+                                                    <div class="blog-title">
+                                                        <span class="heading-page"><a href="http://egazel.com/" target="_blank">Old portfolio version</a></span>
+                                                    </div>
+                                                    <div class="blog-summary">
+                                                    <p>
+                                                        Old version of my portfolio, made from scratch by hand. It's here to see the evolution between 4 years ago and now !
+                                                    </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="blog-tags mt-2 ml-2">
+                                                    <ul>
+                                                        <li class=" mb-1">HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>PHP</li>
+                                                        <li>JS</li>
+                                                        <li>jQuery</li>
+                                                        <li>Bootstrap</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
                                         </section>
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </main>
         {% include "partials/footer.html.twig" %}
     </body>

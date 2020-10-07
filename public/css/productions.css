@@ -1,29 +1,48 @@
 
   .blog-container {
-    background: rgba(83, 83, 83, 0.3);
+    background: rgb(68, 67, 67);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Libre Baskerville", sans-serif;
     font-weight: 100;
-    margin: 48px auto;
+    margin: 48px 0;
+    margin-left:-10%;
     width: 20rem;
+    display:inline-block;
   }
   .blog-container p {
       color:white!important;
   }
   @media screen and (min-width: 480px) {
     .blog-container {
-      width: 28rem;
+      width: 30rem;
+      width:100%;
+      margin-left:1%;
+    }
+
+    .blog-title{
+      font-size:2rem;
     }
   }
   @media screen and (min-width: 767px) {
     .blog-container {
       width: 40rem;
+      margin-left:-10%;
+
+    }
+
+    .blog-title{
+      font-size:2rem;
     }
   }
   @media screen and (min-width: 959px) {
     .blog-container {
       width: 50rem;
+      margin-left:-10%;
+    }
+
+    .blog-title{
+      font-size:2rem;
     }
   }
   
